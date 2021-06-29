@@ -7,14 +7,14 @@ public class CreditCalculator {
 
     public static void main(String[] args) {
 
-        ArrayList<Person> list = new ArrayList<>();
+        ArrayList<Person> list ;
 //파일이 아님..
         Menu m = new Menu();
         CrudService crudService = new CrudService();
         SearchService searchService = new SearchService();
-        //FileService fileService = new FileService();
+        FileService fileService = new FileService();
 
-      //  list = fileService.readFile();
+        list = fileService.readFile();
 
         System.out.println("-----시작-----");
 

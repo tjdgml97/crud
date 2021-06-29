@@ -1,8 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +11,7 @@ public class CrudService {
 
     public void readData(List<Person> list) {
         if( list.size() == 0 ){
-            System.out.println("데이터가 존재하지 않습니다.");
+            System.out.println("데이터가 존재하지 않습니다. ");
             return;
         }
 
