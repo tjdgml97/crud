@@ -46,6 +46,10 @@ public class CreditCalculator {
                     case "5":
                         searchService.searchBy(list, "name");
                         break;
+                    case "6":
+                        fileService.saveFile(list);
+                        System.out.println("파일에 저장되었습니다.");
+                        break;
 
                     case "0":
                         System.out.println("종료");

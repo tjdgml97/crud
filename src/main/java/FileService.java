@@ -6,6 +6,11 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class FileService {
+   // String filename;
+
+   // fileService(){
+   //     두개 해주고
+   // }
 
 
         public ArrayList<Person> readFile() {
@@ -62,8 +67,10 @@ public class FileService {
                 for(Person p: list) {
                     FileUtils.write(file,p.getName() +" / "+p.getFirst()+" / "+p.getSecond()+"\n");
                 }
-            } catch (IOException e) {
-                e.printStackTrace();
+            }catch(FileNotFoundException e){
+                System.out.println("파일이 존재하지않습니다");
+            }catch (IOException e) {
+                System.out.println(e);
             }
         }
 

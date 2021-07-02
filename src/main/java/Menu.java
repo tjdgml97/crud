@@ -1,4 +1,3 @@
-import java.io.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -15,6 +14,7 @@ public class Menu {
         System.out.println("3.수정");
         System.out.println("4.삭제");
         System.out.println("5.이름검색");
+        System.out.println("6. 파일 저장하기");
         System.out.println("0.종료");
         System.out.println("--------------");
 
